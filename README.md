@@ -1,4 +1,4 @@
-# Anoik.is SKIN hunt notifier
+# Anoik.is SKIN notifier
 
 ## A convenience tool for Anoik.is SKIN treasure hunters
 
@@ -21,13 +21,20 @@ PowerShell does not allow execution of unsigned scripts by default.
 You may either change the policy (not recommended) or use the following
 command to start the script:
 
-```
+```cmd
 powershell.exe -ExecutionPolicy Bypass -File "C:\Path\to\anoikis_skin_notifier.ps1"
 ```
 
 The script requires BurntToast to show desktop notifications. Install it
-with the following command:
+with the following PowerShell command:
 
-```
+```ps1
 Install-Module -Name BurntToast -Scope CurrentUser
 ```
+
+## Acknowledgements
+
+I would like to thank CCP for making such a wealth of in-game information
+easily accessible by external tools. I would also like to thank my school
+teachers for letting my laziness flourish–I would've never written those
+scripts if Alt-Tab-ing all the time wasn't that much work.
