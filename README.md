@@ -2,7 +2,7 @@
 
 ## A convenience tool for Anoik.is SKIN treasure hunters
 
-This is a simple tool that reads the EVE chat log and let's you know
+This is a simple tool that reads the EVE chat log and lets you know
 if you have entered one of the systems loaded with a partner SKIN. It
 plays a desktop notification and opens up the system page in the
 browser which allows you to claim the SKIN a.s.a.p.
@@ -35,6 +35,6 @@ Install-Module -Name BurntToast -Scope CurrentUser
 ## Acknowledgements
 
 I would like to thank CCP for making such a wealth of in-game information
-easily accessible by external tools. I would also like to thank my school
+easily accessible to external tools. I would also like to thank my school
 teachers for letting my laziness flourish–I would've never written those
 scripts if Alt-Tab-ing all the time wasn't that much work.
