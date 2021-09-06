@@ -12,8 +12,9 @@ script for Windows.
 
 ## Usage
 
-Just start the script. It picks up the chat log of the last started
-EVE client. On Linux you may need to adjust the path to the chat log.
+Just start the script **after you've started the EVE client and selected
+your character**. It picks up the chat log of the last started EVE client.
+On Linux you may need to adjust the path to the chat log.
 
 ### Windows
 
