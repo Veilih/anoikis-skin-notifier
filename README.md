@@ -12,15 +12,28 @@ script for Windows.
 
 ## Usage
 
+### Linux
+
 Just start the script **after you've started the EVE client and selected
 your character**. It picks up the chat log of the last started EVE client.
-On Linux you may need to adjust the path to the chat log.
+You may need to adjust the path to the chat log.
 
 ### Windows
 
-PowerShell does not allow execution of unsigned scripts by default.
-You may either change the policy (not recommended) or use the following
-command to start the script:
+Start the script and select the correct character. By default, the logs from
+the past 7 days are examined for character names. You can change the number
+of days with `-HistoryDays #days`, e.g.:
+
+```ps1
+-HistoryDays 14
+```
+
+The script monitors for newer log files for the selected character and
+switches automatically.
+
+PowerShell does not allow execution of unsigned scripts by default. You may
+either change the policy (not recommended) or temporarily bypass it by using
+the following command to start the script:
 
 ```cmd
 powershell.exe -ExecutionPolicy Bypass -File "C:\Path\to\anoikis_skin_notifier.ps1"
@@ -31,6 +44,17 @@ with the following PowerShell command:
 
 ```ps1
 Install-Module -Name BurntToast -Scope CurrentUser
+```
+
+### Test Mode (Windows only)
+
+To make sure that everything works as expected and that notifications are
+audible, you may enable test mode with `-TestMode`. This turns on verbose
+output and will notify and sound the alarm on every jump no matter if is into
+a lucky system or not.
+
+```cmd
+powershell.exe -ExecutionPolicy Bypass -File "C:\Path\to\anoikis_skin_notifier.ps1" -TestMode
 ```
 
 ## Acknowledgements
