@@ -10,6 +10,8 @@ browser which allows you to claim the SKIN a.s.a.p.
 The tool is avaiable as a shell script for Linux and a PowerShell
 script for Windows.
 
+**EVE client languages other than English are not supported.**
+
 ## Usage
 
 ### Linux
