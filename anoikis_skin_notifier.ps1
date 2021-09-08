@@ -93,8 +93,10 @@ $functions = {
   }
 
   function Monitor-EveLogFile {
-    $fileName = $input.FullName
-    $testMode = $input
+    $argList = $input.Clone()
+
+    $fileName = $argList[0].FullName
+    $testMode = $argList[1]
 
     if ($testMode) {
       $VerbosePreference = 'Continue'
