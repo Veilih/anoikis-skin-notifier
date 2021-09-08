@@ -33,6 +33,10 @@ of days with `-HistoryDays #days`, e.g.:
 The script monitors for newer log files for the selected character and
 switches automatically.
 
+If you'd like to have the Anoik.is system information page opened of every
+J-system entered, lucky or not, activate the "always open" mode by passing the
+`-AlwaysOpen` switch.
+
 PowerShell does not allow execution of unsigned scripts by default. You may
 either change the policy (not recommended) or temporarily bypass it by using
 the following command to start the script:
